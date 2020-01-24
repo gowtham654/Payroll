@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200124 18:23:41.012" generator="Robot 3.1.2 (Python 2.7.10 on win32)">
+<suite source="C:\Robotproject\Payroll" id="s1" name="Payroll">
+<suite source="C:\Robotproject\Payroll\testsuites" id="s1-s1" name="Testsuites">
+<suite source="C:\Robotproject\Payroll\testsuites\GHR-AdminPage" id="s1-s1-s1" name="GHR-AdminPage">
+<suite source="C:\Robotproject\Payroll\testsuites\GHR-AdminPage\TC01-Payroll.robot" id="s1-s1-s1-s1" name="TC01-Payroll">
+<test id="s1-s1-s1-s1-t1" name="To process Payroll for AllEmployeees">
+<kw name="Process Payroll for All Employees" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200124 18:23:41.392" level="INFO">Opening browser 'chrome' to base url 'https://livetest.greythr.com/'.</msg>
+<status status="PASS" endtime="20200124 18:24:06.303" starttime="20200124 18:23:41.391"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200124 18:24:10.472" starttime="20200124 18:24:06.304"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20200124 18:24:10.474" starttime="20200124 18:24:10.472"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>&amp;{Variable}[username]</arg>
+</arguments>
+<msg timestamp="20200124 18:24:10.475" level="INFO">Typing text 'majordomo' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20200124 18:24:10.578" starttime="20200124 18:24:10.475"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>&amp;{Variable}[password]</arg>
+</arguments>
+<msg timestamp="20200124 18:24:10.580" level="INFO">Typing password into text field 'id=password'.</msg>
+<status status="PASS" endtime="20200124 18:24:10.663" starttime="20200124 18:24:10.579"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@class='btn btn-primary btn-block mt-1']</arg>
+</arguments>
+<msg timestamp="20200124 18:24:10.665" level="INFO">Clicking button '//button[@class='btn btn-primary btn-block mt-1']'.</msg>
+<status status="PASS" endtime="20200124 18:24:10.749" starttime="20200124 18:24:10.664"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@href='/ngapp/payroll']</arg>
+</arguments>
+<msg timestamp="20200124 18:24:10.751" level="INFO">Clicking element '//a[@href='/ngapp/payroll']'.</msg>
+<status status="PASS" endtime="20200124 18:24:20.032" starttime="20200124 18:24:10.750"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[.='Process']</arg>
+</arguments>
+<msg timestamp="20200124 18:24:20.034" level="INFO">Clicking element '//span[.='Process']'.</msg>
+<status status="PASS" endtime="20200124 18:24:21.025" starttime="20200124 18:24:20.033"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[.='Payroll Process']</arg>
+</arguments>
+<msg timestamp="20200124 18:24:21.027" level="INFO">Clicking element '//span[.='Payroll Process']'.</msg>
+<status status="PASS" endtime="20200124 18:24:23.787" starttime="20200124 18:24:21.026"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@class='btn btn-primary'][@data-original-title='Quick Process']</arg>
+</arguments>
+<msg timestamp="20200124 18:24:23.789" level="INFO">Clicking button '//button[@class='btn btn-primary'][@data-original-title='Quick Process']'.</msg>
+<status status="PASS" endtime="20200124 18:24:24.239" starttime="20200124 18:24:23.788"></status>
+</kw>
+<status status="PASS" endtime="20200124 18:24:24.240" starttime="20200124 18:23:41.390"></status>
+</kw>
+<status status="PASS" endtime="20200124 18:24:24.240" critical="yes" starttime="20200124 18:23:41.389"></status>
+</test>
+<status status="PASS" endtime="20200124 18:24:24.242" starttime="20200124 18:23:41.092"></status>
+</suite>
+<status status="PASS" endtime="20200124 18:24:24.246" starttime="20200124 18:23:41.089"></status>
+</suite>
+<status status="PASS" endtime="20200124 18:24:24.249" starttime="20200124 18:23:41.086"></status>
+</suite>
+<status status="PASS" endtime="20200124 18:24:24.251" starttime="20200124 18:23:41.056"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Payroll" pass="1">Payroll</stat>
+<stat fail="0" id="s1-s1" name="Testsuites" pass="1">Payroll.Testsuites</stat>
+<stat fail="0" id="s1-s1-s1" name="GHR-AdminPage" pass="1">Payroll.Testsuites.GHR-AdminPage</stat>
+<stat fail="0" id="s1-s1-s1-s1" name="TC01-Payroll" pass="1">Payroll.Testsuites.GHR-AdminPage.TC01-Payroll</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
